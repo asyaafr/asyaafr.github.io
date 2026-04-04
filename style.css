@@ -15,12 +15,6 @@ body.quiz {
     overflow: hidden;
 }
 
-body.quiz, body.start {
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
 #quiz-title {
     font-family: 'Times New Roman', Times, serif;
     font-size: 200%;
@@ -38,12 +32,12 @@ body.quiz, body.start {
     min-height: 500px;
     border-radius: 12px;
     background-size: cover;
-    background-position: center;
+    background-position: cover;
 }
 
 #question {
     font-family: 'Times New Roman', Times, serif;
-    font-size: 80%;
+    font-size: 1.2rem;
     margin-bottom: 15px;
     padding: 10px;
     color: white;
@@ -61,10 +55,12 @@ body.quiz, body.start {
 }
 
 #answers button {
+    width: 100%;
+    max-width: 400px;
     font-family: 'Times New Roman', Times, serif;
-    font-size: 190%;
+    font-size: 1rem;
     background-color: rgb(255, 255, 255, 0.9);
-    padding: 10px 20px;
+    padding: 10px;
     border-radius: 12px;
 }
 
@@ -129,29 +125,4 @@ button {
     border: none;
     background-color:rgb(255, 255, 255, 0.9);
     border-radius: 12px;
-}
-
-@media (max-width: 600px) {
- 
-    body {
-        font-size: 1rem;
-        background-size: 150%;
-        background-position: center top;
-    }
-    #question {
-        font-size: 1rem;
-        padding: 8px;
-    }
-    #answers-button {
-        font-size: 0.9rem;
-        padding: 8px;
-    }
-    #back-btn, #progress {
-        font-size: 0.8rem;
-        padding: 5px 10px;
-    }
-}
-
-back-btn.hidden {
-    display: none;
 }

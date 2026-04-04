@@ -248,6 +248,13 @@ function showQuestion() {
     });
 
     progressE1.textContent = `${currentQuestion + 1} / ${questions.length}`;
+
+    if (currentQuestion === 0) {
+
+        backBtn.style.display = "none";
+    } else {
+        backBtn.style.display = "block";
+    }
 }
 
 function selectAnswer(type) {
@@ -303,14 +310,6 @@ function selectAnswer(type) {
 }
 
 const backBtn = document.getElementById("back-btn");
-
-function uppdBackBtn (currentQuestion) {
-    if(currentQuestion === 0) {
-        backBtn.classList.add('hidden');
-    } else {
-        backBtn.classList.remove('hidden');
-    }
-}
 
 backBtn.onclick = () => {
 
