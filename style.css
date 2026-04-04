@@ -124,3 +124,21 @@ button {
     background-color:rgb(255, 255, 255, 0.9);
     border-radius: 12px;
 }
+
+@media (max width: 600px) {
+    body {
+        font-size: 1rem;
+    }
+    #question {
+        font-size: 1rem;
+        padding: 8px;
+    }
+    #answers-button {
+        font-size: 0.9rem;
+        padding: 8px;
+    }
+    #back-btn, #progress {
+        font-size: 0.8rem;
+        padding: 5px 10px;
+    }
+}
