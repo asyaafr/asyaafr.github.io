@@ -229,7 +229,6 @@ function showQuestion() {
     progressE1.style.backgroundColor = q.progressColor;
     
     document.body.style.backgroundImage = `url(${q.background})`;
-    document.body.style.backgroundSize = "100%";
 
     questionE1.textContent = q.question;
     answersE1.innerHTML = "";

@@ -1,18 +1,25 @@
 body.start {
     font-family: 'Times New Roman', Times, serif;
     font-size: 200%;
+
     background-image: url(photos/naruto.jpg);
     background-size: cover;
     background-position: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
     color:rgb(255, 255, 255);
     text-align: center;
     border-radius: 12px;
 }
 
 body.quiz {
-    background: none;
     min-height: 100vh;
-    overflow: hidden;
+
+    background-size: cover;
+    background-position: cover;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
 }
 
 #quiz-title {
@@ -31,8 +38,6 @@ body.quiz {
     padding: 5px 10px;
     min-height: 500px;
     border-radius: 12px;
-    background-size: cover;
-    background-position: cover;
 }
 
 #question {
@@ -125,4 +130,13 @@ button {
     border: none;
     background-color:rgb(255, 255, 255, 0.9);
     border-radius: 12px;
+}
+
+@media (max-width = 768px) {
+
+    body {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    }
 }
