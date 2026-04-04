@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width", initial-scale="1.0">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body class="start">
+
+        <div class="quiz-title">
+            <h1 id="quiz-title">Кто ты из Наруто?</h1>
+        </div>
+
+        <div class="container">
+
+            <div id="start-screen">
+                <button id="start-btn">Начать</button>
+            </div>
+</body>
+
+<body class="quiz">
+        <div id="quiz-screen" class="hidden">
+            <h2 id="question">Текст вопроса</h2>
+            <button id="back-btn">Назад</button>
+            <div id="answers">
+                <button>Ответ 1</button>
+                <button>Ответ 2</button>
+                <button>Ответ 3</button>
+                <button>Ответ 4</button>
+                <button>Ответ 5</button>
+                <button>Ответ 6</button>
+            </div>
+            <p id="progress"></p>
+        </div>
+
+        <div id="result-screen" class="hidden">
+            <h2 id="result-title"></h2>
+            <p id="result-description"></p>
+            <button onclick="restartQuiz()">Пройти снова</button>
+        </div>
+    </div>
+    
+        <script src="script.js"></script>
+    </body>
+</html>

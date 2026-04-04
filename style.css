@@ -1,0 +1,126 @@
+body.start {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 200%;
+    background-image: url(photos/naruto.jpg);
+    background-size: cover;
+    background-position: cover;
+    color:rgb(255, 255, 255);
+    text-align: center;
+    border-radius: 12px;
+}
+
+body.quiz {
+    background: none;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+#quiz-title {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 200%;
+    background-color: rgb(102, 152, 222);
+    padding: 10px 20px;
+    display: inline-block;
+    border-radius: 12px;
+
+}
+
+#quiz-screen {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 200%;
+    padding: 5px 10px;
+    min-height: 500px;
+    border-radius: 12px;
+    background-size: cover;
+    background-position: cover;
+}
+
+#question {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 80%;
+    margin-bottom: 15px;
+    padding: 10px;
+    color: white;
+    border-radius: 12px;
+    text-align: center;
+    margin-top: 10px auto;
+}
+
+#answers {
+
+    font-size: 30%;
+    display: column;
+    justify-content: center;
+    gap: 10px;
+}
+
+#answers button {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 190%;
+    background-color: rgb(255, 255, 255, 0.9);
+    padding: 10px 20px;
+    border-radius: 12px;
+}
+
+#answers button:hover {
+    border-color: aliceblue;
+}
+
+.container {
+    max-width: 500px;
+    width: 90%;
+    margin: 20px auto;
+}
+
+.hidden {
+    display: none;
+}
+
+button {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 100%;
+    padding: 10px 20px;
+    margin: 10px auto;
+    display: block;
+    border: none;
+    background:rgb(102, 152, 222);
+    color:rgb(255, 255, 255);
+    cursor: pointer;
+    border-radius: 12px;
+}
+
+#back-btn {
+    position: absolute;
+    top: 100px;
+    right: 20px;
+
+    font-size: 90%;
+    padding: 8px 15px;
+
+    border-radius: 10px;
+    border: none;
+
+    cursor: pointer;
+}
+
+#progress {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+
+    font-size: 75%;
+    color: aliceblue;
+    background:rgb(102, 152, 222);
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+#result-title, #result-description {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 120%;
+    padding: 10px 20px;
+    margin: 10px auto;
+    display:inline-block;
+    border: none;
+    background-color:rgb(255, 255, 255, 0.9);
+    border-radius: 12px;
+}
