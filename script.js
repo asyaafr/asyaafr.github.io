@@ -284,7 +284,6 @@ function showResult() {
     document.getElementById("result-description").textContent = resultsData[result].description;
 
     document.body.style.backgroundImage = `url(${data.background})`;
-    document.body.style.backgroundSize = "100%";
     resultScreen.style.color = data.textColor; 
     document.getElementById("result-description").innerHTML = data.description;
 
