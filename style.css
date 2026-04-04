@@ -38,7 +38,7 @@ body.quiz, body.start {
     min-height: 500px;
     border-radius: 12px;
     background-size: cover;
-    background-position: cover;
+    background-position: center;
 }
 
 #question {
@@ -132,8 +132,11 @@ button {
 }
 
 @media (max-width: 600px) {
+ 
     body {
         font-size: 1rem;
+        background-size: 150%;
+        background-position: center top;
     }
     #question {
         font-size: 1rem;
