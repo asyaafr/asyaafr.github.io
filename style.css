@@ -147,7 +147,7 @@ button {
 
     #progress {
         position: fixed;
-        top: 10px;
+        bottom: 10px;
         left: 10px;
         font-size: 12px;
         padding: 5px 10px;
@@ -156,8 +156,8 @@ button {
 
     #back-btn {
         position: fixed;
-        top: 10px;
-        left: 10px;
+        bottom: 10px;
+        right: 10px;
         font-size: 12px;
         padding: 5px 12px;
         z-index: 999;
