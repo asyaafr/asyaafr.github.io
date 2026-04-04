@@ -304,6 +304,14 @@ function selectAnswer(type) {
 
 const backBtn = document.getElementById("back-btn");
 
+function uppdBackBtn (currentQuestion) {
+    if(currentQuestion === 0) {
+        backBtn.classList.add('hidden');
+    } else {
+        backBtn.classList.remove('hidden');
+    }
+}
+
 backBtn.onclick = () => {
 
     if (currentQuestion === 0) return;
