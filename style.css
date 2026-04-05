@@ -4,7 +4,7 @@ body.start {
     background-image: url(photos/naruto.jpg);
     background-size: cover;
     background-position: cover;
-    color:rgb(255, 255, 255);
+    color:rgb(179, 36, 36);
     text-align: center;
     border-radius: 12px;
 }
@@ -133,33 +133,39 @@ button {
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: scroll;
+    background-position: center;
+    }
+
+       #progress,
+    #back-btn {
+        position: fixed !important;
+        display: inline-flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        width: auto !important;
+        min-width: 30px !important;
+        max-width: 90px !important;
+        height: auto !important;
+        padding: 6px 14px !important;
+        margin: 0 !important;
+        border-radius: 30px !important;
+        border: none !important;
+        z-index: 99999 !important;
+        white-space: nowrap !important;
+        box-shadow: none !important;
     }
 
     #progress {
-        position: fixed;
-        bottom: 100px;
-        left: 10px;
-
-        font-size: 12px;
-        padding: 5px 10px;
-        border-radius: 20px;
-        display: inline-block;
-
-        width: auto;
-        margin: 0px;
+        bottom: 100px !important;
+        left: 10px !important;
+        top: auto !important;
+        right: auto !important;
     }
 
     #back-btn {
-        position: fixed;
-        bottom: 10px;
-        right: 10px;
-
-        font-size: 12px;
-        padding: 5px 12px;
-        border-radius: 20px;
-        display: inline-block;
-        
-        width: auto;
-        margin: 0px;
+        bottom: 10px !important;
+        right: 10px !important;
+        top: auto !important;
+        left: auto !important;
     }
-}
+ }
