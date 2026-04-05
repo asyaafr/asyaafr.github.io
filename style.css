@@ -147,19 +147,21 @@ button {
 
     #progress {
         position: fixed;
-        bottom: 50px;
+        bottom: 100px;
         left: 10px;
         font-size: 12px;
         padding: 5px 10px;
         border-radius: 20px;
+        display: inline-block;
     }
 
     #back-btn {
         position: fixed;
-        bottom: 50px;
+        bottom: 10px;
         right: 10px;
         font-size: 12px;
         padding: 5px 12px;
         border-radius: 20px;
+        display: inline-block;
     }
 }
