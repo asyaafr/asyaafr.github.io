@@ -3,7 +3,7 @@ body.start {
     font-size: 200%;
     background-image: url(photos/naruto.jpg);
     background-size: cover;
-    color:rgb(242, 242, 242);
+    color:rgb(177, 23, 23);
     text-align: center;
     border-radius: 12px;
 }
@@ -129,10 +129,10 @@ button {
 @media (max-width: 768px) {
 
     body {
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: scroll;
-    background-position: center;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+    background-attachment: scroll !important;
+    background-position: center !important;
     }
 
     body.start {
