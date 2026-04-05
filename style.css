@@ -4,7 +4,7 @@ body.start {
 
     background-image: url(photos/naruto.jpg);
     background-size: cover;
-    background-position: cover;
+    background-position: center;
     background-repeat: no-repeat;
     min-height: 100vh;
     overflow: hidden;
@@ -16,7 +16,7 @@ body.start {
 
 body.quiz {
     background-size: cover;
-    background-position: cover;
+    background-position: center;
 
     min-height: 100vh;
     overflow: hidden;
@@ -138,11 +138,13 @@ button {
     background-size: cover !important;
     background-repeat: no-repeat !important;
     background-attachment: scroll !important;
+    background-position: center;
     }
 
     body.start {
     background-attachment: scroll !important;
     background-size: cover !important;
+    background-position: center;
     }
 
        #progress,
