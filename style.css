@@ -136,7 +136,7 @@ button {
     }
 
     body.start {
-        background-position: center;
+        background-size: contain;
     }
 
        #progress,
