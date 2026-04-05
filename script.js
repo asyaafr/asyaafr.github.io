@@ -290,8 +290,6 @@ function showResult() {
     const restartBtn = resultScreen.querySelector("button");
     restartBtn.style.backgroundColor = data.textColor;
 
-    
-
 }
 
 function selectAnswer(type) {
