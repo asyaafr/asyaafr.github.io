@@ -1,76 +1,21 @@
-body.start {
+body {
     font-family: 'Times New Roman', Times, serif;
-    font-size: 200%;
-
-    background-image: url(photos/naruto.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     min-height: 100vh;
-    overflow: hidden;
+    margin: 0;
+}
 
-    color:rgb(255, 255, 255);
+body.start {
+    font-size: 200%;
+    background-image: url(photos/naruto.jpg);
+    color: rgb(255, 255, 255);
     text-align: center;
-    border-radius: 12px;
 }
 
 body.quiz {
-    background-size: cover;
-    background-position: center;
-
-    min-height: 100vh;
-    overflow: hidden;
-}
-
-#quiz-title {
-    font-family: 'Times New Roman', Times, serif;
     font-size: 200%;
-    background-color: rgb(102, 152, 222);
-    padding: 10px 20px;
-    display: inline-block;
-    border-radius: 12px;
-
-}
-
-#quiz-screen {
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 200%;
-    padding: 5px 10px;
-    min-height: 500px;
-    border-radius: 12px;
-}
-
-#question {
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 1.2rem;
-    margin-bottom: 15px;
-    padding: 10px;
-    color: white;
-    border-radius: 12px;
-    text-align: center;
-    margin-top: 10px auto;
-}
-
-#answers {
-
-    font-size: 30%;
-    display: column;
-    justify-content: center;
-    gap: 10px;
-}
-
-#answers button {
-    width: 100%;
-    max-width: 400px;
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 1rem;
-    background-color: rgb(255, 255, 255, 0.9);
-    padding: 10px;
-    border-radius: 12px;
-}
-
-#answers button:hover {
-    border-color: aliceblue;
 }
 
 .container {
@@ -83,100 +28,109 @@ body.quiz {
     display: none;
 }
 
+#quiz-title {
+    font-size: 200%;
+    background-color: rgb(102, 152, 222);
+    padding: 10px 20px;
+    display: inline-block;
+    border-radius: 12px;
+}
+
+#question {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    padding: 10px;
+    color: white;
+    border-radius: 12px;
+    text-align: center;
+}
+
+#result-title, 
+#result-description {
+    font-size: 120%;
+    padding: 10px 20px;
+    margin: 10px auto;
+    display: inline-block;
+    background-color: rgb(255, 255, 255, 0.9);
+    border-radius: 12px;
+}
+
+#answers {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#answers button {
+    width: 100%;
+    max-width: 400px;
+    font-size: 1rem;
+    background-color: rgb(255, 255, 255, 0.9);
+    padding: 10px;
+    border-radius: 12px;
+    border: none;
+    cursor: pointer;
+}
+
 button {
-    font-family: 'Times New Roman', Times, serif;
     font-size: 100%;
     padding: 10px 20px;
     margin: 10px auto;
     display: block;
     border: none;
-    background:rgb(102, 152, 222);
-    color:rgb(255, 255, 255);
+    background: rgb(102, 152, 222);
+    color: rgb(255, 255, 255);
     cursor: pointer;
     border-radius: 12px;
-}
-
-#back-btn {
-    position: absolute;
-    top: 100px;
-    right: 20px;
-
-    font-size: 90%;
-    padding: 8px 15px;
-
-    border-radius: 10px;
-    border: none;
-
-    cursor: pointer;
 }
 
 #progress {
     position: absolute;
     top: 20px;
     left: 20px;
-
     font-size: 75%;
     color: aliceblue;
-    background:rgb(102, 152, 222);
+    background: rgb(102, 152, 222);
     padding: 5px 10px;
     border-radius: 10px;
 }
-#result-title, #result-description {
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 120%;
-    padding: 10px 20px;
-    margin: 10px auto;
-    display:inline-block;
-    border: none;
-    background-color:rgb(255, 255, 255, 0.9);
-    border-radius: 12px;
+
+#back-btn {
+    position: absolute;
+    top: 100px;
+    right: 20px;
+    font-size: 90%;
+    padding: 8px 15px;
+    border-radius: 10px;
 }
 
 @media (max-width: 768px) {
-
     body {
-    background-size: cover !important;
-    background-repeat: no-repeat !important;
-    background-attachment: scroll !important;
-    background-position: center;
+        background-attachment: scroll;
     }
-
-    body.start {
-    background-attachment: scroll !important;
-    background-size: cover !important;
-    background-position: center;
-    }
-
-       #progress,
+    
+    #progress,
     #back-btn {
         position: fixed !important;
-        align-items: center !important;
-        justify-content: center !important;
         width: auto !important;
-        min-width: 30px !important;
         max-width: 90px !important;
-        height: auto !important;
         padding: 6px 14px !important;
         margin: 0 !important;
         border-radius: 30px !important;
-        border: none !important;
         z-index: 99999 !important;
         white-space: nowrap !important;
-        box-shadow: none !important;
     }
-
+    
     #progress {
         bottom: 10px !important;
         left: 10px !important;
         top: auto !important;
-        right: auto !important;
         display: inline-flex !important;
     }
-
+    
     #back-btn {
         bottom: 10px !important;
         right: 10px !important;
         top: auto !important;
-        left: auto !important;
     }
- }
+}
